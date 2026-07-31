@@ -1,0 +1,22 @@
+questions.q1[0] = "Has your club lost more members than it has gained during the past twelve months?";
+questions.q1[1] = "Use your club’s actual membership experience rather than a general impression.";
+questions.q2[0] = "Do you know why members are leaving your club?";
+questions.q3[0] = "Were most departures caused by circumstances outside your club’s control?";
+questions.q4[0] = "Are members dissatisfied with your club’s meetings, communication, or organization?";
+questions.q5[0] = "Are members losing interest because they are not involved in meaningful service through your club?";
+questions.q6[0] = "Are conflict, leadership concerns, dues, or lack of recognition affecting your club’s membership?";
+questions.q6a[0] = "Which concern appears to be having the greatest effect on your club?";
+questions.q7[0] = "Does your club consistently invite prospective members?";
+questions.q8[0] = "Are invited guests attending your club’s activities?";
+questions.q9[0] = "Are guests attending your club’s activities but not joining?";
+questions.q10[0] = "Does your club clearly explain what Lions do and directly invite guests to join?";
+questions.q11[0] = "Are new members remaining active after joining your club?";
+questions.q12[0] = "Is your club preparing members for future leadership?";
+
+results.unknown_departures[0] = "Your club does not yet understand why members are leaving";
+results.unknown_departures[1] = "Without direct feedback, your club may solve the wrong problem.";
+results.meeting_communication[1] = "The way your club operates may no longer fit member needs.";
+results.multiple_retention[0] = "Several retention concerns are affecting your club";
+results.multiple_retention[1] = "Your club may be dealing with connected concerns rather than one cause.";
+results.not_inviting[0] = "Your club is not inviting enough prospective members";
+results.healthy_process[0] = "Your club appears to have a healthy membership process";
