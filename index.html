@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b4f8a">
+  <meta name="description" content="A guided Lions club membership troubleshooting tool.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>OH1 Membership Navigator</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Lions Club Membership Support</p>
+        <h1>OH1 Membership Navigator</h1>
+        <p class="subtitle">Answer one question at a time to identify the most likely membership concern and recommended next steps.</p>
+      </div>
+      <button id="installButton" class="secondary hidden" type="button">Install App</button>
+    </header>
+
+    <section class="progress-panel" aria-label="Assessment progress">
+      <div class="progress-row">
+        <span id="progressText">Ready to begin</span>
+        <span id="stepText"></span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+    </section>
+
+    <section id="startScreen" class="card">
+      <h2>Start the membership review</h2>
+      <p>This tool does not save names, club information, or answers. It only guides the person using it to a result.</p>
+      <button id="startButton" class="primary" type="button">Begin</button>
+    </section>
+
+    <section id="questionScreen" class="card hidden" aria-live="polite">
+      <p id="questionNumber" class="question-number"></p>
+      <h2 id="questionText"></h2>
+      <p id="questionHelp" class="question-help"></p>
+      <div id="answerButtons" class="answer-grid"></div>
+      <div class="navigation-row">
+        <button id="backButton" class="secondary" type="button">Back</button>
+        <button id="restartButton" class="text-button" type="button">Restart</button>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="card result-card hidden" aria-live="polite">
+      <p class="result-label">Likely membership concern</p>
+      <h2 id="resultTitle"></h2>
+      <p id="resultReason" class="result-reason"></p>
+      <div class="result-section">
+        <h3>Recommended actions</h3>
+        <ol id="resultActions"></ol>
+      </div>
+      <div class="result-section">
+        <h3>Questions to discuss</h3>
+        <ul id="resultDiscussion"></ul>
+      </div>
+      <div class="result-controls">
+        <button id="printButton" class="primary" type="button">Print Result</button>
+        <button id="resultBackButton" class="secondary" type="button">Back</button>
+        <button id="resultRestartButton" class="text-button" type="button">Start Over</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>This tool supports club conversations. It does not replace listening to members or reviewing the club’s actual circumstances.</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
