@@ -1,9 +1,10 @@
-const CACHE_NAME = "oh1-membership-navigator-v1";
+const CACHE_NAME = "oh1-membership-navigator-v2";
 const APP_FILES = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./wording.js",
   "./manifest.webmanifest",
   "./icon.svg"
 ];
